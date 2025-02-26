@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "windowed-fullscreen",
+	"version": "${version}",
+	"name": "Windowed Fullscreen",
+	"description": "Hide Window Title Bar!",
+	"authors": [
+		"PrinceParshia"
+	],
+	"contact": {
+		"discord": "https://discord.gg/rK5RbYS9Bm"
+	},
+	"license": "All Rights Reserved",
+	"icon": "windowed-fullscreen.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"cre8to.princ.windowedfullscreen.WindowedFullscreen"
+		]
+	},
+	"mixins": [
+		"windowed-fullscreen.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
