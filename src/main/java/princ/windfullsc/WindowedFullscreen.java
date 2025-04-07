@@ -22,7 +22,7 @@ public class WindowedFullscreen implements ClientModInitializer {
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			boolean isWindowedFullscreenKeyPressed = InputConstants.isKeyDown(client.getWindow().getWindow(), InputConstants.getKey(windowedFullscreenKey.saveString()).getValue());
 			if (isWindowedFullscreenKeyPressed && !wasWindowedFullscreenKeyPressed) {
-				WindowedFullscreenHandler.adjust();
+				WindFullscHandler.adjust();
 			}
 			wasWindowedFullscreenKeyPressed = isWindowedFullscreenKeyPressed;
 		});
